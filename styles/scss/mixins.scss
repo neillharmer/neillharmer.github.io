@@ -1,0 +1,53 @@
+/* MIXINS
+------------------------------------------------------------ */	
+
+// Clearfix
+.clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+
+
+
+// list styles
+@mixin list-style-none {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	li {
+		list-style: none;
+	}
+}
+
+@mixin list-style-inline {
+	@include list-style-none ();
+	
+	li {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+
+
+
+
+// headings
+@mixin headings($from: 1, $to: 6) {
+	@for $i from $from through $to {
+		h#{$i}{
+			@content
+		}
+	}
+}
+

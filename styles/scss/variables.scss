@@ -1,0 +1,66 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,900,900i');
+// light 300
+// regular 400
+// bold 700
+// black 900
+ 
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i');
+ 
+ 
+// The Fonts
+
+$primary_font: 				'Nunito Sans', sans-serif;
+$secondary_font: 			'Merriweather', sans-serif;
+
+
+// The Colors --------------------------------
+
+// Primary
+$primary_1:				  	#fdef41;	// yellow
+$primary_2:				  	#2c2c2c;	// dark grey, accent navigation
+$primary_3:				  	#c4c4c4;	// medium grey, accent exhibitions
+$primary_4:				  	#f6f6f6;	// light grey, accent background
+
+
+// Secondary
+$secondary_1:			  	#e5e5e5;	// silver grey, accent lines 
+$secondary_2:			  	#00aeef;	// blue, accent programs
+$secondary_3:			  	#2cdf67;	// green, accent get involved
+$secondary_4:			  	#ec008c; 	// pink, accent performance
+       
+	   
+// Typicals
+$white:					    	#fff;
+$black:					    	#000;	
+
+
+
+
+
+// social icons
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url('../../fonts/MonoSocialIconsFont-1.10.eot');
+  src: url('../../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+       url('../../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+       url('../../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('../../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.symbol, 
+a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+}
+
+a.symbol:before {
+  content: attr(title);
+  font-size: 130%;
+}
