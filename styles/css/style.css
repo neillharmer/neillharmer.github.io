@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font: 16px/1.8 "Nunito Sans", sans-serif;
+    font: 1rem/1.8 "Nunito Sans", sans-serif;
     color: #2c2c2c;
     height: 100%;
     width: 100%;
@@ -22,55 +22,17 @@ body {
     background-color: #f6f6f6
 }
 
-@font-face {
-    font-family: 'Mono Social Icons Font';
-    src: url("../../fonts/MonoSocialIconsFont-1.10.eot");
-    src: url("../../fonts/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("../../fonts/MonoSocialIconsFont-1.10.woff") format("woff"), url("../../fonts/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("../../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
-    src: url("../../fonts/MonoSocialIconsFont-1.10.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal
-}
 
-.symbol,
-a.symbol:before {
-    font-family: 'Mono Social Icons Font';
-    text-rendering: optimizeLegibility;
-    font-smoothing: antialiased
-}
-
-a.symbol:before {
-    content: attr(title);
-    font-size: 130%
-}
-
-
-
-
-
-.clearfix {
-    *zoom: 1
-}
-
-.clearfix:before,
-.clearfix:after {
-    display: table;
-    content: "";
-    line-height: 0
-}
-
-.clearfix:after {
-    clear: both
-}
 
 ::-moz-selection {
     background: #000;
     color: #fff
 }
-
 ::selection {
     background: #000;
     color: #fff
 }
+
 
 a {
     color: #000;
@@ -84,9 +46,10 @@ a:hover {
     color: #00aeef
 }
 
+
 h2 {
     margin: 0;
-    font: normal 35px/1.4 "Merriweather", sans-serif;
+    font: normal 2.1875rem/1.4 "Merriweather", sans-serif;
     color: #000;
     font-style: italic
 }
@@ -97,8 +60,9 @@ h2 {
     }
 }
 
+
 .contents p {
-    margin: 0 0 30px 0
+    margin: 0 0 1.875rem 0
 }
 
 .contents p:last-child {
@@ -123,7 +87,7 @@ main article>div {
 }
 
 header {
-    padding: 50px 0;
+    padding: 3.125rem 0;
     background: #fff
 }
 
@@ -154,19 +118,20 @@ header>div {
     }
 }
 
+
 header h1 {
     width: 45%;
     margin: 0
 }
 
 header h1 a {
-    font: bold 64px/64px "Nunito Sans", sans-serif;
+    font: bold 4rem/64px "Nunito Sans", sans-serif;
     color: #000;
     display: block;
-    border: 11px solid #000;
-    height: 140px;
-    width: 140px;
-    padding: 25px 0 0;
+    border: 0.6875rem solid #000;
+    height: 8.75rem;
+    width: 8.75rem;
+    padding: 1.5625rem 0 0;
     text-align: center;
     text-decoration: none;
     font-weight: 900
@@ -178,7 +143,7 @@ header h1 a:hover {
 
 @media screen and (max-width: 960px) {
     header h1 {
-        width: 140px
+        width: 8.75rem
     }
 }
 
@@ -192,20 +157,21 @@ header h1 a:hover {
     }
 }
 
+
+
+
 header p {
-    font: 500 21px/1.6 "Merriweather", sans-serif;
+    font: 500 1.3125rem/1.6 "Merriweather", sans-serif;
     width: 55%
 }
 
-header p strong {
+header strong {
     font-weight: 600
 }
 
-
-
 @media screen and (max-width: 960px) {
     header p {
-        width: calc(100% - 140px);
+        width: calc(100% - 8.75rem);
         padding-left: 10%
     }
 }
@@ -220,135 +186,62 @@ header p strong {
 
 
 
+
 main article {
-    padding: 120px 0
+    padding: 7.5rem 0
 }
 
-main article figure {
+main figure {
     text-align: center;
-    margin: 0 0 20px
+    margin: 0 0 1.25rem
 }
 
-main article figure img {
+main  img {
     height: auto;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25)
+    border-radius: 0.3125rem;
+    -webkit-box-shadow: 0 0 0.9375rem 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0.9375rem 0 rgba(0, 0, 0, 0.25)
 }
 
-main article figcaption {
-    margin-bottom: 35px
+main figcaption {
+    margin-bottom: 2.1875rem
 }
 
-main article summary {
+main summary {
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     font-style: italic
 }
 
-main article.awake {
-    background-color: #21B179
-}
+main article.awake {background-color: #21B179}
+main article.wake {background-color: #21242B}
+main article.flex {background-color: #aeaeae}
+main article.mediamanager {background-color: #3184bc}
+main article.checkout {background-color: #f1f1f1}
+main article.lagree {background-color: #1d1d1d}
+main article.editor {background-color: #9199a2}
+main article.support {background-color: #3184bc}
+main article.dashboard {background-color: #149842}
+main article.element {background-color: #aeaeae}
+main article.suitecommerce {background-color: #d55e1c}
+main article.wheeler {background-color: #000}
+main article.lep {background-color: #1d1d1d}
+main article.tabular {background-color: #149842}
+main article.tasks {background-color: #3184bc}
 
-main article.wake {
-    background-color: #21242B
-}
 
-main article.flex {
-    background-color: #aeaeae
-}
-
-main article.mediamanager {
-    background-color: #3184bc
-}
-
-main article.checkout {
-    background-color: #f1f1f1
-}
-
-main article.lagree {
-    background-color: #1d1d1d
-}
-
-main article.editor {
-    background-color: #9199a2
-}
-
-main article.support {
-    background-color: #3184bc
-}
-
-main article.dashboard {
-    background-color: #149842
-}
-
-main article.element {
-    background-color: #aeaeae
-}
-
-main article.suitecommerce {
-    background-color: #d55e1c
-}
-
-main article.wheeler {
-    background-color: #000
-}
-
-main article.lep {
-    background-color: #1d1d1d
-}
-
-main article.tabular {
-    background-color: #149842
-}
-
-main article.tasks {
-    background-color: #3184bc
-}
-
-.text_white {
-    color: #fff
-}
-
+.text_white,
 .text_white h2 {
     color: #fff
 }
 
 
 
-
-
 footer {
     text-align: center;
-    padding: 50px 0 100px;
-    font-size: 12px;
-    letter-spacing: 1px;
+    padding: 3.125rem 0 6.25rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.0625rem;
     text-transform: uppercase
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-ul li {
-    list-style: none
-}
-
-ul li {
-    display: inline-block;
-    vertical-align: top
-}
-
-ul li {
-    margin: 0 10px
-}
-
-ul li a {
-    font-size: 40px;
-    text-decoration: none !important;
-    -webkit-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out
 }
